@@ -4,8 +4,6 @@ A small, research-oriented Python toolkit for simulating and visualizing **rough
 
 > This project is **educational / research-focused**, not a trading system.
 
----
-
 ## 1. Overview
 
 This repository implements:
@@ -18,8 +16,6 @@ This repository implements:
 - High-level visualizations that reproduce key stylized facts from the rough volatility literature
 
 The main script simulates these models, generates diagnostic plots, and saves them as PNG files.
-
----
 
 ## 2. Theoretical Background
 
@@ -34,8 +30,6 @@ Key ideas:
 - Equity index volatility appears **“rough”**, with Hurst exponent $H \approx 0.1$
 - Rough volatility models naturally reproduce the **$T^{-0.4}$** decay of ATM skew
 - Hybrid models combining rough and smooth factors can capture **multi-scale variance dynamics**
-
----
 
 ## 3. Implemented Models
 
@@ -62,8 +56,6 @@ A two-factor hybrid model:
 - Total variance: `V_total = V_r + V_s`
 - Allows visualization of **two-scale variance decomposition** and relative contributions over time
 
----
-
 ## 4. Analysis & Visualization
 
 The script includes several analysis/plotting utilities:
@@ -87,8 +79,6 @@ Generates a 2×2 figure:
 
 Saved as: `variance_comparison.png`
 
----
-
 ### 4.3 `plot_atm_skew_term_structure()`
 
 Produces an illustrative **ATM skew term structure**:
@@ -100,8 +90,6 @@ Saved as: `atm_skew.png`
 
 This reproduces the canonical stylized fact from Gatheral–Jaisson–Rosenbaum (2018).
 
----
-
 ### 4.4 `plot_hybrid_decomposition(model, ...)`
 
 Visualizes the hybrid model’s **two-scale variance structure**:
@@ -112,8 +100,6 @@ Visualizes the hybrid model’s **two-scale variance structure**:
 4. Stock price paths with mean path overlay
 
 Saved as: `hybrid_decomposition.png`
-
----
 
 ## 5. Running the Demo
 
